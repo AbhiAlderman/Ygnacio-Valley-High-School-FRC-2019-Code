@@ -10,6 +10,7 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 
+//Command to raise ramp
 public class RampOn extends Command {
   public RampOn() {
     requires(Robot.rampsub);

@@ -15,7 +15,9 @@ import frc.robot.commands.DriveTrainCommand;
 /**
  * Add your docs here.
  */
+//Subsystem for the drivetrain
 public class DriveTrainSubsystem extends Subsystem {
+  //Create the drivetrain
   DifferentialDrive drivetrain;
   
  
@@ -23,17 +25,21 @@ public class DriveTrainSubsystem extends Subsystem {
   // here. Call these from Commands.
   public DriveTrainSubsystem(){
   
+   //Assign the drivetrain
   drivetrain = RobotMap.drivetrain;
   
  
 
   }
+  
+  //Method for controlling the drivetrain using arcade drive
   public void arcadeDrive(double x, double y){
     drivetrain.arcadeDrive(-x,y);
   }
   
 
 
+  //Set the default command
   @Override
   public void initDefaultCommand() {
     setDefaultCommand(new DriveTrainCommand());

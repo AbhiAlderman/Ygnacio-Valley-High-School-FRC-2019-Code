@@ -11,6 +11,7 @@ import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 
+//Command to move the arm backwards
 public class ArmReverse extends Command {
   public ArmReverse() {
     requires(Robot.armsub);

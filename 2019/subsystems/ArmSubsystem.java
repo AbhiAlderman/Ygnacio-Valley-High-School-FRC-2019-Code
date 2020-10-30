@@ -16,18 +16,24 @@ import frc.robot.commands.ArmForward;
 /**
  * Add your docs here.
  */
+//Subsystem for the arm solenoid
 public class ArmSubsystem extends Subsystem {
+  //Create arm solenoid
   DoubleSolenoid arm;
+  
+  //Assign arm solenoid
   public ArmSubsystem(){
     arm = RobotMap.arm;
   }
 
+  //Method for moving the arm piston
   public void armset(Value x){
   arm.set(x);
   }
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
+  //Set the default value of the subsystem
   @Override
   public void initDefaultCommand() {
     setDefaultCommand(new ArmForward());

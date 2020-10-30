@@ -10,6 +10,7 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 
+//Command to control the arm motor
 public class ArmMotorCommand extends Command {
   public ArmMotorCommand() {
     requires(Robot.armmotorsub);

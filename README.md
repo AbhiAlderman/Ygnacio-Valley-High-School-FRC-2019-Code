@@ -31,6 +31,7 @@ Here is an instagram post of the robot: https://www.instagram.com/p/BvW8NmXlTiA/
 
 The FIRST Robotics competition is a competition in which high school teams across the globe compete by building a robot in 6 weeks to perform in each years game. The students design, build, and program their own robots as a team, and compete against other high schools in their region. The top teams from each region compete at the international finals held in Houston, Texas.
 
+
 To learn more about FRC, see here - https://www.firstinspires.org/
 
 

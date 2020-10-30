@@ -16,18 +16,24 @@ import frc.robot.commands.IntakePistonOpen;
 /**
  * Add your docs here.
  */
+//Subsystem for Intake solenoids
 public class IntakePneumaticSub extends Subsystem {
+  //Create the intakepiston solenoid
   Solenoid intakepiston;
   
+  //Assign the intakepiston
   public IntakePneumaticSub(){
     intakepiston = RobotMap.intakepiston;
   }
+  
+  //Method to control the intakepiston
   public void intakepistonset(boolean x){
     intakepiston.set(x);
   }
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
+  //Set the default command
   @Override
   public void initDefaultCommand() {
     setDefaultCommand(new IntakePistonOpen());

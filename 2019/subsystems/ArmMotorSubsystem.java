@@ -17,19 +17,25 @@ import frc.robot.commands.ArmMotorCommand;
 /**
  * Add your docs here.
  */
+
+//Subsytem for the arm motor
 public class ArmMotorSubsystem extends Subsystem {
+  //Create the arm motor
   WPI_TalonSRX armmotor;
   
   public ArmMotorSubsystem(){
+    //Assign the arm motor 
     armmotor = RobotMap.armMotor;
   }
-
+  
+  //Method for setting the speed of the arm motor
   public void armmotorset(double x){
     armmotor.set(ControlMode.PercentOutput, x);
   }
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
+  //Assign the default command
   @Override
   public void initDefaultCommand() {
     setDefaultCommand(new ArmMotorCommand());

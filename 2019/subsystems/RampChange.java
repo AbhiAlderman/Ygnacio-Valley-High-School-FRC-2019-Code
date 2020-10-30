@@ -14,18 +14,24 @@ import frc.robot.RobotMap;
 /**
  * Add your docs here.
  */
+//Subsystem for the Ramp Solenoids
 public class RampChange extends Subsystem {
+  //Create ramp solenoid
   Solenoid ramp;
+  
+  //Assign the ramp
   public RampChange(){
     ramp = RobotMap.ramp;
   }
 
+  //Method to control the ramp
   public void rampset(boolean x){
     ramp.set(x);
   }
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
+  //Set the default command
   @Override
   public void initDefaultCommand() {
     // Set the default command for a subsystem here.

@@ -10,6 +10,7 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 
+//Command to control Intake motors
 public class IntakeMotorCommand extends Command {
   public IntakeMotorCommand() {
     requires(Robot.intakesub);

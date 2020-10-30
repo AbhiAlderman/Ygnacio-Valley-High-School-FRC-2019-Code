@@ -10,6 +10,7 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 
+//Command that always runs to control the drivetrain
 public class DriveTrainCommand extends Command {
   public DriveTrainCommand() {
     requires(Robot.DriveTrainSub);

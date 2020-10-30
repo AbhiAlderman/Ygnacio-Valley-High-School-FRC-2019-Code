@@ -15,19 +15,26 @@ import frc.robot.commands.HighGear;
 /**
  * Add your docs here.
  */
+//Subsystem to change gears on the drivetrain
 public class GearChange extends Subsystem {
+  //Create the gearbox solenoid
   Solenoid gearbox;
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
+  //Assign the gearbox
   public GearChange(){
     gearbox = RobotMap.gearbox;
   }
+  
+  //Method to set the gearbox
   public void Setgear(boolean x){
     
     gearbox.set(x);
-
+    
   }
+  
+  //Set the default command
   @Override
   public void initDefaultCommand() {
     setDefaultCommand(new HighGear());

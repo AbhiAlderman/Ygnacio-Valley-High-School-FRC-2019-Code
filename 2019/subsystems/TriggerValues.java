@@ -14,6 +14,7 @@ import frc.robot.commands.IntakeMotorCommand;
 /**
  * Add your docs here.
  */
+//Subystem to add the controller's right and left trigger values into one integer.
 public class TriggerValues extends Subsystem {
   double rightTrigger, leftTrigger, triggerValue;
 

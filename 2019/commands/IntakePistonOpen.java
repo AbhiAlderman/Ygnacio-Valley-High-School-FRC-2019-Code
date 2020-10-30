@@ -10,6 +10,7 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 
+//Command to open Intake piston
 public class IntakePistonOpen extends Command {
   public IntakePistonOpen() {
     requires(Robot.intakepsub);

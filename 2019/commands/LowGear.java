@@ -10,6 +10,7 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 
+//Switch drivetrain to low gear
 public class LowGear extends Command {
   public LowGear() {
     requires(Robot.gearchange);

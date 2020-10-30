@@ -33,7 +33,7 @@ public class ArmSubsystem extends Subsystem {
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
-  //Set the default value of the subsystem
+  //Set the default command
   @Override
   public void initDefaultCommand() {
     setDefaultCommand(new ArmForward());

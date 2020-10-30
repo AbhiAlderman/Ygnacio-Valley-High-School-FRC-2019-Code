@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 
-
+//Command to move the arm forward 
 public class ArmForward extends Command {
   public ArmForward() {
     requires(Robot.armsub);

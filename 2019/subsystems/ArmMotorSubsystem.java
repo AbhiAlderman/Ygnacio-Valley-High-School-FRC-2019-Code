@@ -35,7 +35,7 @@ public class ArmMotorSubsystem extends Subsystem {
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
-  //Assign the default command
+  //Set the default command
   @Override
   public void initDefaultCommand() {
     setDefaultCommand(new ArmMotorCommand());

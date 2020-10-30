@@ -10,6 +10,7 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Robot;
 
+//Command to switch the drivetrain into high gear
 public class HighGear extends Command {
   public HighGear() {
     requires(Robot.gearchange);

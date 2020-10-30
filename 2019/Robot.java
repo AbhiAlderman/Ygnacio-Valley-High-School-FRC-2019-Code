@@ -30,6 +30,7 @@ import frc.robot.subsystems.TriggerValues;
  * project.
  */
 public class Robot extends TimedRobot {
+  
   public static DriveTrainSubsystem DriveTrainSub = new DriveTrainSubsystem();
   public static GearChange gearchange = new GearChange();
   public static ArmSubsystem armsub = new ArmSubsystem();
@@ -49,11 +50,14 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void robotInit() {
+    //Enable the compressor when Robot turns on
     RobotMap.compressor.enabled();
     
     m_oi = new OI();
     // chooser.addOption("My Auto", new MyAutoCommand());
     SmartDashboard.putData("Auto mode", m_chooser);
+    
+    //Enable the cameras
     RobotMap.camera.isEnabled();
     RobotMap.camera2.isEnabled();
     RobotMap.camera.setResolution(640, 480);

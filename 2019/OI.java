@@ -24,8 +24,11 @@ import frc.robot.commands.RampOn;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
+  //Create Controllers
   public Joystick driver = new Joystick(0);
   public Joystick gunner = new Joystick(1);
+  
+  //Create Buttons
   public Button Dabutton = new JoystickButton(driver, 1);
   public Button Dbbutton = new JoystickButton(driver, 2);
   public Button Gabutton = new JoystickButton(gunner,1);
@@ -34,7 +37,9 @@ public class OI {
   public Button Dmenubutton = new JoystickButton(driver, 7);
   public Button Grightbumper = new JoystickButton(gunner, 5);
   public Button Gleftbumper = new JoystickButton(gunner, 6);
+  
   public OI(){
+    //Assign buttons to commands
     Dabutton.whenPressed(new HighGear());
     Dbbutton.whenPressed(new LowGear());
     Gabutton.whenPressed(new ArmReverse());
